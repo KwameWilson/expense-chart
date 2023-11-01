@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,700&family=Lato:ital,wght@0,300;0,400;1,300&family=Poppins:wght@200;400;600;700;800&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #F8E9DD;
+}
+
+section {
+    margin: 182px auto;
+    width: 540px;
+}
+
+.grid .top .balance {
+    color: #fff;
+    border-radius: 20px;
+    background: #EC755D;
+    height: 125px;
+    padding-left: 32px;
+    padding-top: 27px;
+    padding-bottom: 25px;
+
+
+    position: relative;
+}
+
+
+
+.balance h5 {
+    font-family: DM Sans;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.balance h4 {
+    font-family: DM Sans;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+span {
+    position: absolute;
+    right: 39px;
+    bottom: 39px;
+}
