@@ -109,6 +109,12 @@ span {
     top: -48px;
     left: 50%;
     transform: translateX(-50%);
+    opacity: 0;
+    transition: opacity 100ms ease-in-out;
+}
+
+.chart .day:hover .amount {
+    opacity: 1;
 }
 
 
