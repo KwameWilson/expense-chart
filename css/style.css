@@ -8,7 +8,18 @@
 
 body {
     background-color: #F8E9DD;
+    font-family: DM Sans;
 }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
 
 section {
     margin: 182px auto;
@@ -20,9 +31,8 @@ section {
     border-radius: 20px;
     background: #EC755D;
     height: 125px;
-    padding-left: 32px;
-    padding-top: 27px;
-    padding-bottom: 25px;
+    padding: 27px 391px 25px 32px;
+    margin-bottom: 24px;
 
 
     position: relative;
@@ -31,23 +41,228 @@ section {
 
 
 .balance h5 {
-    font-family: DM Sans;
     font-size: 18px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+    margin-bottom: 10px;
 }
 
 .balance h4 {
-    font-family: DM Sans;
     font-size: 32px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
 }
 
+
 span {
     position: absolute;
     right: 39px;
     bottom: 39px;
 }
+
+
+.grid .lower {
+    background-color: #FFFBF6;
+    border-radius: 20px;
+
+    padding: 32px 40px;
+    color: #382314;
+}
+
+.lower h1.title {
+    margin-bottom: 66px;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 42px;
+}
+
+.chart {
+    display: flex;
+    gap: 18px;
+    align-items: flex-end;
+    border-bottom: 2px solid #F8E9DD;
+    padding-bottom: 60px;
+    margin-bottom: 32px;
+}
+
+.chart .day {
+    position: relative;
+    background-color: #EC755D;
+    width: 50px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 150ms ease-in-out;
+}
+
+.chart .day:hover {
+    background: #FF9B86;
+}
+
+.chart .day .amount {
+    background-color: #382314;
+    color: #FFFBF6;
+    padding: 8px;
+    border-radius: 5px;
+    position: absolute;
+    top: -48px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+.chart .day.mon {
+    height: 50px;
+}
+
+.chart .day.tues {
+    height: 100px;
+}
+
+.chart .day.wed {
+    height: 150px;
+    background-color: #76B5BC;
+}
+
+.chart .day.wed:hover {
+    background-color: #FF9B86;
+}
+
+.chart .day.thurs {
+    height: 89px;
+}
+
+.chart .day.fri {
+    height: 67px;
+}
+
+.chart .day.sat {
+    height: 124px;
+}
+
+.chart .day.sun {
+    height: 73px;
+}
+
+.chart .day .label {
+    color: #92857A;
+    font-size: 15px;
+    font-weight: 400;
+    position: absolute;
+    bottom: -28px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+.summary {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+
+.summary .total h5 {
+    color: #92857A;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 42px;
+    margin-bottom: 2px;
+}
+
+.summary .total h1 {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 62px;
+}
+
+.diff {
+
+    text-align: right;
+}
+
+.diff h6 {
+    color: #382314;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 23px;
+    margin-bottom: 2px;
+}
+
+.diff h5 {
+    color: #92857A;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 23px;
+    margin-bottom: 12px;
+}
+
+
+
+
+
+
+
+
+
+
+/* 
+.grid .chart h4 {
+    font-family: DM Sans;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    padding-bottom: 66px;
+    line-height: normal;
+} */
+
+/* .nested__grid {
+    display: grid;
+    gap: 18px;
+    grid-template-columns: repeat(7, 1fr);
+    align-items: end;
+
+}
+
+.bottom .nested__grid .grid-column {
+    background-color: #EC755D;
+    border-radius: 5px;
+    height: 50px;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.bottom .grid-column:nth-child(2) {
+    height: 100px;
+}
+
+.bottom .grid-column:nth-child(3) {
+    height: 150px;
+}
+
+.bottom .grid-column:nth-child(4) {
+    height: 89px;
+    background-color: #FF9B86;
+}
+
+.bottom .grid-column:nth-child(5) {
+    height: 67px;
+}
+
+.bottom .grid-column:nth-child(6) {
+    height: 124px;
+}
+
+.bottom .grid-column:nth-child(7) {
+    height: 67px;
+}
+
+
+
+.day {
+    position: absolute;
+    bottom: -20px;
+} */
